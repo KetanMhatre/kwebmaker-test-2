@@ -3,6 +3,7 @@ import banner from '../assets/sec3.png';
 function Section3() {
   return (
     <div
+      id='key-features'
       style={{
         backgroundImage: `url(${banner})`,
         backgroundSize: 'cover',

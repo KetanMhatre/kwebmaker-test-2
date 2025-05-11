@@ -17,7 +17,7 @@ const ContentWrapper = styled.div`
 `;
 function Section2() {
   return (
-    <div style={{ marginBottom: '100px' }}>
+    <div style={{ marginBottom: '100px' }} id='about-us'>
       <Container fluid style={{ padding: 0, margin: 0 }}>
         <Row className='justify-content-around w-100'>
           <Col md={4} className='d-none d-lg-block'>

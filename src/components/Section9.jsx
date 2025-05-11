@@ -16,7 +16,7 @@ const SectionWrapper = styled.div`
 
 function Section9() {
   return (
-    <SectionWrapper className='pt-5 pt-lg-0'>
+    <SectionWrapper className='pt-5 pt-lg-0' id='blogs'>
       <Container fluid>
         <Row>
           <Col className='p-0' xs={12} lg={6}>

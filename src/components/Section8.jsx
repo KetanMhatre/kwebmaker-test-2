@@ -74,8 +74,16 @@ function Section8() {
         margin-top: 80px !important;
       }
     }
+   @media only screen and (max-width: 700px) {
+      .specDiv {
+        padding: 20px !important;
+      }
+      
+    }
+
+
   `}</style>
-      <div className='responsive-margin-top-1' style={{ marginTop: '100px' }}>
+      <div id='facilities' className='responsive-margin-top-1' style={{ marginTop: '100px' }}>
         <Container className='text-center text-lg-start'>
           <Row>
             <Col className='p-0'>
@@ -128,7 +136,10 @@ function Section8() {
 
           <PositionWrapper>
             <div className='d-flex gap-5 flex-column flex-lg-row w-100 align-items-center '>
-              <div style={{ width: '386px' }}>
+              <div
+                className='specDiv'
+                style={{ maxWidth: '386px', widt: '100%' }}
+              >
                 <div style={{ position: 'relative' }}>
                   <img
                     src={first}
@@ -153,11 +164,14 @@ function Section8() {
                   />
                 </div>
 
-                <p className='fw-medium mb-0 mt-2' style={{ fontSize: '28px' }}>
+                <p
+                  className='fw-medium mb-0 mt-2 text-center text-lg-start'
+                  style={{ fontSize: '28px' }}
+                >
                   Tennis
                 </p>
 
-                <div className='d-flex gap-3 flex-wrap'>
+                <div className='d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start'>
                   <FeatureBox>
                     <FeatureText>9 Clay Courts</FeatureText>
                   </FeatureBox>
@@ -167,7 +181,7 @@ function Section8() {
                 </div>
 
                 <p
-                  className='mb-0 fw-lighter mt-3'
+                  className='mb-0 fw-lighter mt-3 text-center text-lg-start'
                   style={{ fontSize: '16px' }}
                 >
                   Lorem Ipsum has been the industry's standard <br /> dummy text
@@ -175,8 +189,11 @@ function Section8() {
                 </p>
               </div>
 
-              <div>
-                <div style={{ position: 'relative', width: '386px' }}>
+              <div
+                className='specDiv'
+                style={{ maxWidth: '386px', widt: '100%' }}
+              >
+                <div style={{ position: 'relative' }}>
                   <img
                     src={second}
                     alt='image'
@@ -195,22 +212,29 @@ function Section8() {
                       transform: 'translate(-50%, -50%)',
                       height: '40px',
                       width: '40px',
-                      zIndex: 1,
                       cursor: 'pointer',
                     }}
                   />
                 </div>
 
-                <p className='fw-medium mb-0 mt-2' style={{ fontSize: '28px' }}>
+                <p
+                  className='fw-medium mb-0 mt-2 text-center text-lg-start'
+                  style={{ fontSize: '28px' }}
+                >
                   Accommodation
                 </p>
 
-                <FeatureBox>
-                  <FeatureText>5 Star Hotel</FeatureText>
-                </FeatureBox>
+                <div className='d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start'>
+                  <FeatureBox>
+                    <FeatureText>9 Clay Courts</FeatureText>
+                  </FeatureBox>
+                  <FeatureBox>
+                    <FeatureText>4 Hard Courts</FeatureText>
+                  </FeatureBox>
+                </div>
 
                 <p
-                  className='mb-0 fw-lighter mt-3'
+                  className='mb-0 fw-lighter mt-3 text-center text-lg-start'
                   style={{ fontSize: '16px' }}
                 >
                   Lorem Ipsum has been the industry's standard <br /> dummy text
@@ -222,7 +246,10 @@ function Section8() {
 
           <PositionBottomWrapper className='mt-4 mt-lg-0'>
             <div className='d-flex gap-5 flex-column flex-lg-row w-100 align-items-center align-items-lg-start mt-5 mt-md-0 '>
-              <div style={{ width: '386px' }}>
+              <div
+                className='specDiv'
+                style={{ maxWidth: '386px', widt: '100%' }}
+              >
                 <div style={{ position: 'relative' }}>
                   <img
                     src={third}
@@ -247,76 +274,14 @@ function Section8() {
                   />
                 </div>
 
-                <p className='fw-medium mb-0 mt-3' style={{ fontSize: '28px' }}>
+                <p
+                  className='fw-medium mb-0 mt-2 text-center text-lg-start'
+                  style={{ fontSize: '28px' }}
+                >
                   Fitness
                 </p>
-                <div className='d-flex gap-3'>
-                  <div
-                    style={{
-                      width: '120px',
-                      borderRadius: '20px',
-                      background: '#99B81B',
-                    }}
-                    className='d-flex h-100 justify-content-center  align-items-center py-2 mt-2'
-                  >
-                    <p
-                      className='fw-light mb-0  text-white'
-                      style={{ fontSize: '13px' }}
-                    >
-                      Gym
-                    </p>
-                  </div>
-                  <div
-                    style={{
-                      width: '120px',
-                      borderRadius: '20px',
-                      background: '#99B81B',
-                    }}
-                    className='d-flex h-100 justify-content-center  align-items-center py-2 mt-2'
-                  >
-                    <p
-                      className='fw-light mb-0  text-white'
-                      style={{ fontSize: '13px' }}
-                    >
-                      Fitness Room
-                    </p>
-                  </div>
-                </div>
 
-                <p
-                  className='mb-0 fw-lighter mt-3'
-                  style={{ fontSize: '16px' }}
-                >
-                  Lorem Ipsum has been the industry's standard <br /> dummy text
-                  ever since the 1500s,
-                </p>
-              </div>
-              <div style={{ position: 'relative', height: '386px' }}>
-                <img
-                  src={fourth}
-                  alt='image'
-                  className='img-fluid'
-                  style={{
-                    width: '100%',
-                  }}
-                />
-                <img
-                  src={play}
-                  alt='play'
-                  style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    height: '40px',
-                    width: '40px',
-                    cursor: 'pointer',
-                  }}
-                />
-                <p className='fw-medium mb-0 mt-3' style={{ fontSize: '28px' }}>
-                  Recovery
-                </p>
-                <div className='d-flex gap-3'>
+                <div className='d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start'>
                   <div
                     style={{
                       width: '120px',
@@ -344,7 +309,67 @@ function Section8() {
                       className='fw-light mb-0  text-white'
                       style={{ fontSize: '13px' }}
                     >
-                      Pool
+                      Spa
+                    </p>
+                  </div>
+                </div>
+                <p
+                  className='mb-0 fw-lighter mt-3 text-center text-lg-start'
+                  style={{ fontSize: '16px' }}
+                >
+                  Lorem Ipsum has been the industry's standard <br /> dummy text
+                  ever since the 1500s,
+                </p>
+              </div>
+              <div
+                className='specDiv'
+                style={{ maxWidth: '386px', widt: '100%' }}
+              >
+                <div style={{ position: 'relative' }}>
+                  <img
+                    src={fourth}
+                    alt='image'
+                    className='img-fluid'
+                    style={{
+                      width: '100%',
+                    }}
+                  />
+                  <img
+                    src={play}
+                    alt='play'
+                    style={{
+                      position: 'absolute',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      height: '40px',
+                      width: '40px',
+                      cursor: 'pointer',
+                    }}
+                  />
+                </div>
+
+                <p
+                  className='fw-medium mb-0 mt-2 text-center text-lg-start'
+                  style={{ fontSize: '28px' }}
+                >
+                  Recovery
+                </p>
+
+                <div className='d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start'>
+                  <div
+                    style={{
+                      width: '120px',
+                      borderRadius: '20px',
+                      background: '#99B81B',
+                    }}
+                    className='d-flex h-100 justify-content-center  align-items-center py-2 mt-2'
+                  >
+                    <p
+                      className='fw-light mb-0  text-white'
+                      style={{ fontSize: '13px' }}
+                    >
+                      Spa
                     </p>
                   </div>
                   <div
@@ -359,7 +384,7 @@ function Section8() {
                       className='fw-light mb-0  text-white'
                       style={{ fontSize: '13px' }}
                     >
-                      Massage
+                      Spa
                     </p>
                   </div>
                 </div>

@@ -17,9 +17,9 @@ function Section6() {
   ];
 
   return (
-    <div style={{ marginTop: '200px' }}>
+    <div style={{ marginTop: '200px' }} id='academy'>
       <Container fluid className='p-0'>
-        <Row className='g-0 flex-column flex-lg-row'>
+        <Row className='g-0 flex-column flex-lg-row align-items-center'>
           <Col xs={12} lg={5} className='p-0'>
             <div
               style={{

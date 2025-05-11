@@ -5,7 +5,7 @@ import secondImg from '../assets/sec7-two.png';
 import thirdImg from '../assets/sec7-three.png';
 function Section7() {
   return (
-    <div>
+    <div id='coach'>
       <Container>
         <Row style={{ marginTop: '100px' }}>
           <Col md={8}>

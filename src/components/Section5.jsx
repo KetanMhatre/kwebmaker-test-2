@@ -6,7 +6,7 @@ import specThree from '../assets/spec3.png';
 import specialImg from '../assets/special.png';
 function Section5() {
   return (
-    <div>
+    <div id='programs'>
       <Container>
         <Row style={{ marginTop: '100px' }}>
           <Col md={8}>

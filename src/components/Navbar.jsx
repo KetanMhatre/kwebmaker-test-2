@@ -3,14 +3,13 @@ import { HiMenu } from 'react-icons/hi';
 import logo from '../assets/ssa.png';
 
 const links = [
-  'About Us',
-  'Matches',
-  'Programs',
-  'Coaches',
-  'Amenities',
-  'Events',
-  'News',
-  'Blogs',
+  { label: 'About Us', href: '#about-us' },
+  { label: 'Key Features', href: '#key-features' },
+  { label: 'Programs', href: '#programs' },
+  { label: 'Academy', href: '#academy' },
+  { label: 'Coach', href: '#coach' },
+  { label: 'Facilities', href: '#facilities' },
+  { label: 'Blogs', href: '#blogs' },
 ];
 
 function Navbar() {
@@ -51,8 +50,11 @@ function Navbar() {
             <ul className='navbar-nav'>
               {links.map((link, index) => (
                 <li className='nav-item mx-2' key={index}>
-                  <a href='#' className='nav-link text-capitalize text-white'>
-                    {link}
+                  <a
+                    href={link.href}
+                    className='nav-link text-capitalize text-white'
+                  >
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -88,10 +90,11 @@ function Navbar() {
             {links.map((link, index) => (
               <li key={index} className='mb-3'>
                 <a
-                  href='#'
+                  href={link.href}
                   className='text-dark text-decoration-none text-capitalize fs-5'
+                  onClick={() => setIsOpen(false)}
                 >
-                  {link}
+                  {link.label}
                 </a>
               </li>
             ))}
