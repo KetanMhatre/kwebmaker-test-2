@@ -83,7 +83,11 @@ function Section8() {
 
 
   `}</style>
-      <div id='facilities' className='responsive-margin-top-1' style={{ marginTop: '100px' }}>
+      <div
+        id='facilities'
+        className='responsive-margin-top-1'
+        style={{ marginTop: '100px' }}
+      >
         <Container className='text-center text-lg-start'>
           <Row>
             <Col className='p-0'>
@@ -226,10 +230,7 @@ function Section8() {
 
                 <div className='d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start'>
                   <FeatureBox>
-                    <FeatureText>9 Clay Courts</FeatureText>
-                  </FeatureBox>
-                  <FeatureBox>
-                    <FeatureText>4 Hard Courts</FeatureText>
+                    <FeatureText>5 Star Hotel</FeatureText>
                   </FeatureBox>
                 </div>
 
@@ -294,7 +295,7 @@ function Section8() {
                       className='fw-light mb-0  text-white'
                       style={{ fontSize: '13px' }}
                     >
-                      Spa
+                      Gym
                     </p>
                   </div>
                   <div
@@ -309,7 +310,7 @@ function Section8() {
                       className='fw-light mb-0  text-white'
                       style={{ fontSize: '13px' }}
                     >
-                      Spa
+                      Fitness Room
                     </p>
                   </div>
                 </div>
@@ -356,7 +357,7 @@ function Section8() {
                   Recovery
                 </p>
 
-                <div className='d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start'>
+                <div className='d-flex gap-3 gap-lg-2 flex-wrap justify-content-center justify-content-lg-start'>
                   <div
                     style={{
                       width: '120px',
@@ -384,7 +385,22 @@ function Section8() {
                       className='fw-light mb-0  text-white'
                       style={{ fontSize: '13px' }}
                     >
-                      Spa
+                      Pool
+                    </p>
+                  </div>
+                  <div
+                    style={{
+                      width: '120px',
+                      borderRadius: '20px',
+                      background: '#99B81B',
+                    }}
+                    className='d-flex h-100 justify-content-center  align-items-center py-2 mt-2'
+                  >
+                    <p
+                      className='fw-light mb-0  text-white'
+                      style={{ fontSize: '13px' }}
+                    >
+                      Massage
                     </p>
                   </div>
                 </div>

@@ -215,7 +215,7 @@ function Section1() {
           <Row>
             <Col sm={12} style={{ color: 'white' }}>
               <div>
-                <p style={{ fontSize: '24px' }} className=' mb-0 fw-medium'>
+                <p style={{ fontSize: '18px' }} className=' mb-0 fw-bold'>
                   Hunter Valley
                 </p>
               </div>

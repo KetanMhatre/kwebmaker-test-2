@@ -58,7 +58,7 @@ function Section2() {
                 style={{
                   fontSize: '24px',
                   marginTop: '100px',
-                  cursor: 'p',
+                  cursor: 'pointer',
                 }}
               >
                 <div>

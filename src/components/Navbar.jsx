@@ -19,11 +19,10 @@ function Navbar() {
   return (
     <>
       <nav
-        className='navbar navbar-expand-lg'
+        className='navbar navbar-expand-lg w-100 p-3'
         style={{ position: 'relative', zIndex: 1000 }}
       >
-        <div className='container d-flex justify-content-between align-items-center px-3 py-2'>
-          {/* Mobile view logo + menu */}
+        <div className='w-100 d-flex justify-content-between align-items-center px-3 py-2'>
           <div className='d-flex d-lg-none justify-content-between align-items-center w-100'>
             <a className='navbar-brand' href='/'>
               <img src={logo} alt='logo' style={{ height: '40px' }} />
@@ -38,7 +37,6 @@ function Navbar() {
             </button>
           </div>
 
-          {/* Desktop view */}
           <a className='navbar-brand d-none d-lg-block me-auto' href='/'>
             <img src={logo} alt='logo' style={{ height: '40px' }} />
           </a>
@@ -53,6 +51,7 @@ function Navbar() {
                   <a
                     href={link.href}
                     className='nav-link text-capitalize text-white'
+                    style={{ fontSize: '20px' }}
                   >
                     {link.label}
                   </a>
@@ -76,6 +75,7 @@ function Navbar() {
         </div>
       </nav>
 
+     
       {isOpen && (
         <div
           className='d-lg-none p-3 position-absolute w-100'

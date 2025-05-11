@@ -52,7 +52,10 @@ function Section9() {
                   Lorem Ipsum has been the industry's standard <br /> dummy text
                   ever since the 1500s,
                 </p>
-                <p className='mb-0 fw-light mt-5' style={{ fontSize: '16px' }}>
+                <p
+                  className='mb-0 fw-light mt-5'
+                  style={{ fontSize: '16px', cursor: 'pointer' }}
+                >
                   read more{' '}
                   <span>
                     <img src={arrow} alt='arrow-img' />
@@ -94,7 +97,10 @@ function Section9() {
                   Lorem Ipsum has been the industry's standard <br /> dummy text
                   ever since the 1500s,
                 </p>
-                <p className='mb-0 fw-light mt-5' style={{ fontSize: '16px' }}>
+                <p
+                  className='mb-0 fw-light mt-5'
+                  style={{ fontSize: '16px', cursor: 'pointer' }}
+                >
                   read more{' '}
                   <span>
                     <img src={arrow} alt='arrow-img' />
