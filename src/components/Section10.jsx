@@ -21,7 +21,7 @@ function Section10() {
             <img
               src={logo}
               alt=''
-              style={{ height: '107.14px', height: '150px' }}
+              style={{ height: '107.14px' }}
             />
           </Col>
           <Col lg={8} className='mt-4 mt-lg-0'>
