@@ -1,13 +1,13 @@
 import React from 'react';
-import secTwo from '../assets/secTwo.png';
 import { Col, Container, Row } from 'react-bootstrap';
+import secTwo from '../assets/secTwo.png';
 import first from '../assets/colOne.png';
 import second from '../assets/colTwo.png';
 import third from '../assets/colThree.png';
 import fourth from '../assets/colFour.png';
 import styled from 'styled-components';
 const ContentWrapper = styled.div`
-  padding: 200px 120px 120px 120px;
+  padding: 200px 120px 120px 0px;
 
   @media (max-width: 991px) {
     padding: 0px;
@@ -15,99 +15,87 @@ const ContentWrapper = styled.div`
     margin-bottom: 70px;
   }
 `;
+
 function Section2() {
   return (
-    <div style={{ marginBottom: '100px' }} id='about-us'>
-      <Container fluid style={{ padding: 0, margin: 0 }}>
-        <Row className='justify-content-around w-100'>
-          <Col md={4} className='d-none d-lg-block'>
-            <div style={{ padding: 0, margin: 0 }}>
-              <img
-                src={secTwo}
-                alt=''
-                style={{ display: 'block', margin: 0, padding: 0 }}
-              />
-            </div>
-          </Col>
-          <Col
-            md={8}
-            className='d-flex flex-column justify-content-center align-items-lg-start align-items-center text-center mt-5 mt-lg-0 '
+    <Container
+      fluid
+      className='position-relative'
+      style={{ overflow: 'hidden' }}
+    >
+      <div
+        style={{
+          backgroundImage: `url(${secTwo})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          position: 'absolute',
+          top: 20,
+          left: 0,
+          width: '453.52px',
+          height: '450px',
+          zIndex: -1,
+        }}
+      ></div>
+      <Row className='pt-5'>
+        <Col
+          xs={12}
+          className='p-0 d-flex justify-content-center align-items-center'
+        >
+          <p
+            className='mb-0 py-5 text-center'
+            style={{ maxWidth: '701px', fontSize: '24px' }}
+          >
+            To be the first venue in the world to have{' '}
+            <span className='fw-bold' style={{ color: '#99B81B' }}>
+              60 multi surface courts
+            </span>
+            <br /> at one location and establish first one stop tennis academy
+            in the Asia Pacific producing grand slam champions.
+          </p>
+        </Col>
+        <Col>
+          <div
+            className='fw-semibold d-flex gap-5 flex-wrap justify-content-center'
+            style={{
+              fontSize: '24px',
+              marginTop: '100px',
+              cursor: 'pointer',
+            }}
           >
             <div>
-              <div>
-                <p
-                  className='mb-0 fw-normal text-dark'
-                  style={{ fontSize: '24px' }}
-                >
-                  <span className='d-block '>
-                    To be the first venue in the world to have{' '}
-                    <span className='fw-bold' style={{ color: '#99B81B' }}>
-                      60 multi surface courts
-                    </span>
-                  </span>
-                  <span className='d-block'>
-                    at one location and establish first one stop tennis academy
-                  </span>
-                  <span className='d-block'>
-                    in the Asia Pacific producing grand slam champions.
-                  </span>
-                </p>
-              </div>
+              <p className='mb-0'>About Us</p>
               <div
-                className='fw-semibold d-flex gap-5 flex-wrap justify-content-center'
                 style={{
-                  fontSize: '24px',
-                  marginTop: '100px',
-                  cursor: 'pointer',
+                  width: '100px',
+                  height: '2px',
+                  background: '#99B81B',
                 }}
-              >
-                <div>
-                  <p className='mb-0'>About Us</p>
-                  <div
-                    style={{
-                      width: '100px',
-                      height: '2px',
-                      background: '#99B81B',
-                      cursor: 'pointer',
-                    }}
-                  />
-                </div>
-                <div>
-                  <p
-                    className='mb-0'
-                    style={{ color: '#C1C1C1', cursor: 'pointer' }}
-                  >
-                    Coaches
-                  </p>
-                </div>
-                <div>
-                  <p
-                    className='mb-0'
-                    style={{ color: '#C1C1C1', cursor: 'pointer' }}
-                  >
-                    Vision
-                  </p>
-                </div>
-                <div>
-                  <p
-                    className='mb-0'
-                    style={{ color: '#C1C1C1', cursor: 'pointer' }}
-                  >
-                    Mission
-                  </p>
-                </div>
-              </div>
+              />
             </div>
-          </Col>
-        </Row>
-      </Container>
-
+            <div>
+              <p className='mb-0' style={{ color: '#C1C1C1' }}>
+                Coaches
+              </p>
+            </div>
+            <div>
+              <p className='mb-0' style={{ color: '#C1C1C1' }}>
+                Vision
+              </p>
+            </div>
+            <div>
+              <p className='mb-0' style={{ color: '#C1C1C1' }}>
+                Mission
+              </p>
+            </div>
+          </div>
+        </Col>
+      </Row>
       <div className='container'>
         <Row>
           <Col lg={6} className='d-flex align-items-center'>
             <div className='d-flex justify-content-center align-items-center'>
               <ContentWrapper>
-                <h3>About Us</h3>
+                <h3 className='fw-bold'>About Us</h3>
                 <p className='mt-3' style={{ fontSize: '24px' }}>
                   To be the first venue in the world to have 60 multi-surface
                   courts at one location and establish the first one-stop tennis
@@ -213,7 +201,7 @@ function Section2() {
           </Col>
         </Row>
       </div>
-    </div>
+    </Container>
   );
 }
 

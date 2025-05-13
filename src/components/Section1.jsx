@@ -7,6 +7,7 @@ import dot from '../assets/dot.png';
 import leftArrow from '../assets/leftArrow.png';
 import { Col, Container, Row } from 'react-bootstrap';
 import styled from 'styled-components';
+
 const Wrapper = styled.div`
   text-align: center;
   color: white;
