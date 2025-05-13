@@ -18,11 +18,7 @@ function Section10() {
             lg={4}
             className='d-flex align-items-center justify-content-center justify-content-lg-start'
           >
-            <img
-              src={logo}
-              alt=''
-              style={{ height: '107.14px' }}
-            />
+            <img src={logo} alt='' style={{ height: '107.14px' }} />
           </Col>
           <Col lg={8} className='mt-4 mt-lg-0'>
             <Row className='text-capitalize text-center text-lg-start'>
@@ -170,22 +166,22 @@ function Section10() {
                   <img
                     src={facebook}
                     alt='facebook'
-                    style={{ height: '30px', width: '30px' }}
+                    style={{ height: '30px', width: '30px', cursor: 'pointer' }}
                   />
                   <img
                     src={twitter}
                     alt='twitter'
-                    style={{ height: '30px', width: '30px' }}
+                    style={{ height: '30px', width: '30px', cursor: 'pointer' }}
                   />
                   <img
                     src={instagram}
                     alt='instagram'
-                    style={{ height: '30px', width: '30px' }}
+                    style={{ height: '30px', width: '30px', cursor: 'pointer' }}
                   />
                   <img
                     src={youtube}
                     alt='youtube'
-                    style={{ height: '30px', width: '30px' }}
+                    style={{ height: '30px', width: '30px', cursor: 'pointer' }}
                   />
                 </div>
               </Col>

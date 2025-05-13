@@ -76,7 +76,7 @@ function Section7() {
               <p className='mb-0 mt-2 fw-medium' style={{ fontSize: '25px' }}>
                 Cameron Pearson
               </p>
-              <p className='mb-0 mt-2 '>
+              <p className='mb-0 mt-2 fw-light'>
                 Head Major Events - <br /> Tennis Australia
               </p>
             </div>

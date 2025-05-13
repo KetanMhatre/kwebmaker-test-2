@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import background from '../assets/secFourBack.png';
+import background from '../assets/secFourBack2.jpeg';
 import arrow from '../assets/rightArrow.png';
 import firstImg from '../assets/fourFirst.png';
 import secondImg from '../assets/fourSecond.png';
@@ -26,7 +26,7 @@ const dataTwo = [
 const SectionWrapper = styled.div`
   background-image: url(${background});
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
 
   @media (max-width: 991px) {
@@ -56,7 +56,7 @@ const ImageCol = styled(Col)`
 const Section4 = () => {
   return (
     <SectionWrapper>
-      <Container className='pt-5'>
+      <Container style={{ paddingTop: '200px' }}>
         <Row>
           <Col md={8}>
             <div className='d-flex flex-column justify-content-center'>

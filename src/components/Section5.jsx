@@ -8,7 +8,7 @@ function Section5() {
   return (
     <div id='programs'>
       <Container>
-        <Row style={{ marginTop: '100px' }}>
+        <Row style={{ paddingTop: '100px' }}>
           <Col md={8}>
             <div className='d-flex flex-column justify-content-center '>
               <p className='fs-2 fw-bolder mb-0'>Programs</p>
@@ -25,7 +25,7 @@ function Section5() {
             <button
               style={{
                 background: '#99B81B',
-                borderRadius: '20px',
+                borderRadius: '10px',
                 marginTop: '40px',
               }}
               className='px-5 py-3 border-0 text-white float-end '
@@ -44,7 +44,7 @@ function Section5() {
                 style={{
                   height: '462px',
                   objectFit: 'cover',
-                  borderRadius: '20px',
+                  borderRadius: '10px',
                 }}
               />
               <div
@@ -78,7 +78,7 @@ function Section5() {
                 style={{
                   height: '462px',
                   objectFit: 'cover',
-                  borderRadius: '20px',
+                  borderRadius: '10px',
                 }}
               />
 
@@ -90,7 +90,7 @@ function Section5() {
                   backgroundColor: 'rgba(0, 0, 0, 0.4)',
                   zIndex: 1,
                   objectFit: 'cover',
-                  borderRadius: '20px',
+                  borderRadius: '10px',
                 }}
               />
 
@@ -126,7 +126,7 @@ function Section5() {
                 style={{
                   height: '462px',
                   objectFit: 'cover',
-                  borderRadius: '20px',
+                  borderRadius: '10px',
                 }}
               />
               <div
@@ -137,7 +137,7 @@ function Section5() {
                   backgroundColor: 'rgba(0, 0, 0, 0.4)',
                   zIndex: 1,
                   objectFit: 'cover',
-                  borderRadius: '20px',
+                  borderRadius: '10px',
                 }}
               />
               <div

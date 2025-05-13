@@ -19,18 +19,19 @@ function Section6() {
   return (
     <div style={{ marginTop: '200px' }} id='academy'>
       <Container fluid className='p-0'>
-        <Row className='g-0 flex-column flex-lg-row align-items-center'>
+        <Row className='g-0 flex-column flex-lg-row align-items-stretch'>
           <Col xs={12} lg={5} className='p-0'>
             <div
               style={{
                 backgroundImage: `url(${first})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                minHeight: '725px',
+                height: '100%',
                 color: '#fff',
                 padding: '40px',
                 display: 'flex',
                 flexDirection: 'column',
+                flex: '1',
               }}
             >
               <div className='d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start'>
@@ -48,10 +49,10 @@ function Section6() {
                 </p>
               </div>
 
-              <div className='d-flex flex-column justify-content-between mt-4 flex-grow-1'>
+              <div className='d-flex flex-column justify-content-between mt-4 flex-grow-1 m'>
                 {locations.map(([label, distance], i) => (
                   <div
-                    className='d-flex align-items-center justify-content-between'
+                    className='d-flex align-items-center justify-content-between mt-5 mt-lg-0'
                     key={i}
                   >
                     <div className='d-flex align-items-center gap-2'>
@@ -65,7 +66,7 @@ function Section6() {
                     </div>
                     <img
                       src={dash}
-                      className='img-fluid flex-grow-1 mx-2 d-none d-md-block'
+                      className='img-fluid flex-grow-1 mx-2 '
                       alt=''
                       style={{ height: '1px' }}
                     />
@@ -78,7 +79,7 @@ function Section6() {
             </div>
           </Col>
           <Col xs={12} lg={7} className='p-0'>
-            <div style={{ height: '725px' }}>
+            <div style={{ height: '100%', flex: '1' }}>
               <img
                 src={second}
                 alt='Section Visual'
