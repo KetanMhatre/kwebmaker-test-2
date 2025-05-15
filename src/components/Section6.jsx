@@ -66,7 +66,7 @@ function Section6() {
                     </div>
                     <img
                       src={dash}
-                      className='img-fluid flex-grow-1 mx-2 '
+                      className='img-fluid flex-grow-1 mx-2 d-none d-md-block '
                       alt=''
                       style={{ height: '1px' }}
                     />
